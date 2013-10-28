@@ -74,7 +74,7 @@ public final class RunProgram {
 		}
 
 		CSVWriter writer = new CSVWriter();
-		writer.setFilePath("export//export.csv");
+		writer.setFilePath(properties.getProperty("csv_path"));
 		writer.setSeparator(",");
 		try {
 			writer.writeAll(set);
